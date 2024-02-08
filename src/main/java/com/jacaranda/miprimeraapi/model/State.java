@@ -22,6 +22,17 @@ public class State {
 	@OneToMany(mappedBy = "province")
 	private List<Village> listVillages;
 
+	public State() {
+		super();
+	}
+
+	public State(String codPro, String name, List<Village> listVillages) {
+		super();
+		this.codPro = codPro;
+		this.name = name;
+		this.listVillages = listVillages;
+	}
+
 	public String getCodPro() {
 		return codPro;
 	}

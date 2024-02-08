@@ -25,6 +25,17 @@ public class Village {
 	@JoinColumn(name="codpro")
 	private State province;
 
+	public Village() {
+		super();
+ 	}
+
+	public Village(String codPue, String name, State province) {
+		super();
+		this.codPue = codPue;
+		this.name = name;
+		this.province = province;
+	}
+
 	public String getCodPue() {
 		return codPue;
 	}
